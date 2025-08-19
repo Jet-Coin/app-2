@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>  <!-- essinal for HTML5-->
+<html lang="en"> <!--set the langauge to english"could be changed later-->
+<head>
+    
+    <meta http-equiv="refresh" content="200">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript">
+    <meta name="author" content="John Doe">
+    <meta charset="UTF-8">  <!--set the character for HTML encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" type="image/x-icon" href=" "> <!-- favicon"tab Icon"-->
+    
+    <title>Jet Coin</title>
+    
+</head>
+
+
+<body onload="restore()">
+   <!--
+    use these method as much as you can:
+    * add alt attribute
+    * add title attribute
+
+   
+   
+   -->
+    <!--       increase /decrease area-->
+<div id="cover"></div>
+<div id="log"> 
+    <label>insert the password here:<input type="password" id="password"></label>
+    <button id="log-send">log in</button>
+</div>
+           <div>
+            <button id="button+">+</button>
+            <span id="amount">0</span>
+            <button id="button-">-</button>
+           </div>
+   
+
+   <div>
+    <p> Choose who want send from:</p>
+    <select id="select" >
+        <option >Choose</option>
+        <option>Mohamed</option>
+        <option>Omar</option>
+        <option>Abdullah</option>
+        <option>Gaith</option>
+        <option>system</option>
+        
+
+    </select>
+
+<hr>
+
+     <p> Choose who want send to:</p>
+    <select id="select2">
+        <option >Choose</option>
+        <option>Mohamed</option>
+        <option>Omar</option>
+        <option>Abdullah</option>
+        <option>Gaith</option>
+
+    </select>
+    <!--       increase /decrease area-->
+
+   </div>
+   <!-- show table-->
+    <button id="submit">SEND</button>
+    <hr>
+    <table>
+        <tr><th>Name</th> <th>Amount</th></tr>
+        <tr><td>Omar</td> <td id="user-omar">0</td></tr>
+        <tr><td>Abdo</td> <td id="user-abd">0</td></tr>
+        <tr><td>Mouhamed</td> <td id="user-moh">0</td></tr>
+        <tr><td>Gaith</td> <td id="user-G">0</td></tr>
+    
+    </table>
+
+
+    
+    <script src="app.js" >
+       
+    </script>     <!-- use async or defer 
+    *use defer to apply JS after the page load
+    *use async to apply JS once the JS file downloaded
+    ==================================================
+    there are little changes that can be access from w3 school HTML tutorial/JS section
+    -->
+<noscript><!--write here what people without js would see --></noscript>
+
+</body>
+</html>
